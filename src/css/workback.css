@@ -1,0 +1,40 @@
+.workback-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.wb-grid {
+	display: flex;
+	flex-direction: column;
+	max-width: 90%;
+}
+
+.wb-row {
+	display: flex;
+	flex-direction: row;
+	gap: 0.1em;
+	justify-content: center;
+}
+
+.wb-row > * {
+	padding: 1em;
+	border: 1px solid aqua;
+	flex-basis: calc(100% / 8);
+	/* max-width: 10%; */
+	overflow: clip;
+}
+
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+input {
+	max-width: 100%;
+}
+
+.wb-heading {
+	display: flex;
+	border: 1px solid white;
+	justify-content: center;
+}

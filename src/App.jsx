@@ -1,20 +1,14 @@
 import { useEffect, useReducer } from 'react';
-import About from './About';
-import reactLogo from './assets/react.svg';
-import BB from './BB';
-import BlowUpGrid from './BlowUpGrid';
+
 import Contact from './Contact';
 import Content from './Content';
-import EW from './EW';
 import Nav from './Nav';
-import Rainbow from './Rainbow';
-import WebTemplate from './WebTemplate';
+import Schedule from './Schedule';
+import Workback from './Workback';
 
 const subApps = [
-	{ name: 'web template', module: WebTemplate, props: { id: 'wtmp' } },
-	{ name: 'about', module: About },
-	{ name: 'blow up', module: BlowUpGrid },
-	{ name: 'rainbow', module: Rainbow, props: { id: 'rain' } },
+	{ name: 'wb-zb', module: Workback, props: { id: 'wb-zb' } },
+	{ name: 'sch-zb', module: Schedule, props: { id: 'sch-zb' } },
 ];
 
 //keep track of which module is loaded across App
@@ -36,16 +30,16 @@ function globalReducer(state, action) {
 		};
 	}
 	return {
-		page: 'home',
-		module: EW,
+		page: 'Workback',
+		module: Workback,
 	};
 }
 
 function App() {
 	const [state, dispatch] = useReducer(globalReducer, {
-		page: 'home',
-		module: EW,
-		props: { id: 'ew' },
+		page: 'Workback',
+		module: Workback,
+		props: { id: 'workback' },
 		contact_visibile: false,
 	});
 	useEffect(() => {

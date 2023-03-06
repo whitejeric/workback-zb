@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-const Content = ({ PastModule, Module, props }) => {
+const Content = ({ Module }) => {
 	return (
 		<>
 			<Module />
-			{/* <PastModule fade={true} /> */}
 		</>
 	);
 };
