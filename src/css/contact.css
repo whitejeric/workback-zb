@@ -1,0 +1,20 @@
+.contact-pop-up {
+	position: absolute;
+	display: flex;
+	z-index: 3;
+	margin-left: calc(100% / 3);
+	height: 40vh;
+	width: calc(100% / 3);
+	margin-top: 20vh;
+	border-radius: 2%;
+	background-color: black;
+	justify-content: center;
+}
+.contact-pop-up > form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-pop-up > form > *:first-child {
+	margin-left: 0%;
+}

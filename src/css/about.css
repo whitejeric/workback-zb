@@ -1,0 +1,44 @@
+.spacer {
+	height: 10vh;
+	position: relative;
+}
+
+.abt-fade {
+	animation: 2s ease-out 0s 1 fadeOutOnLoad;
+}
+
+.abt-flex {
+	animation: 2s ease-out 0s 1 fadeInAtLoad;
+	position: absolute;
+	display: grid;
+	width: 80%;
+	height: 100vh;
+	margin-left: 10%;
+	grid-template-columns: repeat(2, 1fr) repeat(3, 1fr);
+	grid-template-rows: repeat(6, 15vw);
+	/* border: 1px solid white; */
+}
+
+.abt-card {
+	display: flex;
+	align-items: center;
+	/* grid-column: 1/3; */
+	border: 1px solid rgb(187, 174, 174, 0.04);
+	justify-content: center;
+	/* overflow: scroll; */
+}
+
+#abt-intro {
+	grid-column: 1/4;
+	background-color: red;
+	font-size: 10em;
+	align-items: center;
+	justify-content: center;
+}
+
+#abt-splash-image {
+	align-items: baseline;
+	justify-content: flex-start;
+	grid-column: span 2 / 5;
+	grid-row: span 2;
+}

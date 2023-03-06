@@ -1,0 +1,14 @@
+.rainbow-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	height: 100vh;
+	overflow: scroll;
+}
+
+.rainbow-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120vh;
+	/* border: 1px solid wheat; */
+}

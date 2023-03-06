@@ -1,0 +1,41 @@
+.wt-grid {
+	animation: 2s ease-out 0s 1 fadeInAtLoad;
+	gap: 0.05vw;
+	padding-top: 10vh;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 4fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	overflow: hidden;
+}
+
+.wt-grid > .content-card {
+	height: 100%;
+	width: auto;
+	border: 1px solid var(--border-color);
+}
+
+.wt-grid > #gallery {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wt-grid > #side {
+	grid-column: 2/-1;
+	grid-row: 1/2;
+	display: flex;
+	align-items: center;
+	padding-left: 3em;
+}
+
+.wt-grid > #title,
+.wt-grid > #down,
+.wt-grid > #up {
+	grid-row: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

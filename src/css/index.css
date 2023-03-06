@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300&family=Roboto+Mono:ital,wght@1,200&display=swap');
+:root {
+	--background-color: rgb(31, 32, 32);
+	--border-color: rgb(187, 174, 174, 0.04);
+	--nav-background: rgba(78, 95, 112, 0.4);
+	--nav-hover: rgba(7, 19, 31, 0.2);
+	--text-size: 1.2em;
+	--text-color: aliceblue;
+	--link-color: rgb(213, 217, 221);
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: aliceblue;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+@keyframes fadeOutOnLoad {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
+
+@keyframes fadeInAtLoad {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--background-color);
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: revert;
+}
+
+.content-grid {
+	display: grid;
+	z-index: 1;
+	flex-grow: 1;
+}
